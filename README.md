@@ -97,22 +97,20 @@ Calorie and weight projections are estimates, not medical advice.
 Take a look inside ShyokuShi.
 
 <p align="center">
-  <img src="assets/screenshots/home.png" width="240" alt="ShyokuShi daily dashboard">
+  <img src="assets/home.png" width="240" alt="ShyokuShi daily dashboard">
   &nbsp;&nbsp;
-  <img src="assets/screenshots/diary.png" width="240" alt="ShyokuShi food diary">
+  <img src="assets/diary.png" width="240" alt="ShyokuShi food diary">
   &nbsp;&nbsp;
-  <img src="assets/screenshots/planner.png" width="240" alt="ShyokuShi meal planner">
+  <img src="assets/planner.png" width="240" alt="ShyokuShi meal planner">
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/progress.png" width="240" alt="ShyokuShi weight progress">
+  <img src="assets/progress.png" width="240" alt="ShyokuShi weight progress">
   &nbsp;&nbsp;
-  <img src="assets/screenshots/food-search.png" width="240" alt="ShyokuShi food search">
+  <img src="assets/food-search.png" width="240" alt="ShyokuShi food search">
   &nbsp;&nbsp;
-  <img src="assets/screenshots/settings.png" width="240" alt="ShyokuShi settings">
+  <img src="assets/settings.png" width="240" alt="ShyokuShi settings">
 </p>
-
-<sub>📸 Screenshots should be saved in <code>assets/screenshots/</code> using the filenames shown above. Remove any image references for screenshots you have not added yet.</sub>
 
 ---
 
