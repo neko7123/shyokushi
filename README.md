@@ -1,8 +1,6 @@
-# 食誌 ShyokuShi
+# 食誌 ShyokuShi 🍃
 
 ### A quiet space for your daily food journal.
-
-**食誌 (ShyokuShi)** is a personal food diary and nutrition tracker built with Flutter. Record what you eat, review nutritional estimates, plan upcoming meals, and follow your weight history — while keeping your personal diary on your device.
 
 <p align="center">
   <img src="assets/shiyokushi_logo.svg" alt="食誌 ShyokuShi logo" width="180">
@@ -13,341 +11,276 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Flutter-Framework-02569B?logo=flutter&logoColor=white" alt="Built with Flutter">
+  <img src="https://img.shields.io/badge/Flutter-Framework-02569B?logo=flutter&logoColor=white" alt="Flutter">
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white" alt="Android">
-  <img src="https://img.shields.io/badge/Storage-Local--first-4A6741" alt="Local-first storage">
+  <img src="https://img.shields.io/badge/Storage-Local--first-4A6741" alt="Local-first">
   <img src="https://img.shields.io/badge/Privacy-No%20account%20required-6B8E72" alt="No account required">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License">
 </p>
 
 ---
 
-## Overview
+## 🌿 About
 
-食誌 is designed for people who want a practical way to understand their eating habits without handing their personal diary to a cloud service.
+**食誌 (ShyokuShi)** is a personal food diary and nutrition tracker built with Flutter and Dart.
 
-It brings food logging, calorie and macronutrient tracking, meal planning, weight history, and encrypted data exports into one personal application.
+Record what you eat, explore nutritional estimates, plan upcoming meals, and track your weight history—all in one calm, personal space.
 
-Rather than pretending every food estimate is exact, 食誌 lets you review nutritional information, choose from food database results, and enter your own values when needed.
+ShyokuShi is designed around a simple idea: understanding your eating habits should be useful, approachable, and respectful of your privacy.
 
-### What you can do
+## ✨ Features
 
-- Record meals with multiple food items, quantities, notes, and optional photos.
-- Calculate calories and available macronutrients from recorded food values.
-- Search food databases or enter nutrition information manually.
-- Plan meals and preview projected daily calorie intake.
-- Track body weight and review historical changes.
-- Estimate daily energy needs based on your profile and goal.
-- Export and restore your diary using encrypted backups.
-- Use the app without creating an online account.
+### 🏠 Daily dashboard
+- View calories consumed against your estimated daily target.
+- Track protein, carbohydrates, and fat.
+- Explore calorie history by week, month, quarter, or year.
+- Review period totals and daily averages.
 
-## Privacy by design
+### 🍱 Food diary
+- Record multiple foods in each meal.
+- Enter quantities in grams and nutritional values.
+- Add optional meal photos and notes.
+- Browse previous days and review your meals.
+- Edit or delete diary entries.
 
-食誌 is **local-first**, with no cloud diary or automatic synchronization in the current version.
+### 🔎 Food search
+- Search supported food databases.
+- Review available nutrition information.
+- Enter food and nutrient values manually when needed.
+- Choose a regional food-reference preference for Japan, the United States, Canada, the United Kingdom, South Korea, China, or Other.
+
+**Supported food-data providers:**
+- [Open Food Facts](https://world.openfoodfacts.org/)
+- [USDA FoodData Central](https://fdc.nal.usda.gov/)
+
+Food records can be incomplete or inaccurate. Check packaging and product information when possible.
+
+### 📅 Meal planner
+- Plan foods before recording them as eaten.
+- Preview projected daily calorie intake.
+- Combine logged and planned food in your forecast.
+- Mark planned entries as eaten when appropriate.
+
+### 📈 Weight and progress tracking
+- Record body-weight measurements.
+- Review historical changes.
+- View progress over your recorded date range.
+- Calculate BMI when sufficient profile information is available.
+
+### 🎯 Personal goals
+- Configure your profile and activity level.
+- Choose weight loss, weight gain, or maintenance goals.
+- Review estimated daily calorie needs.
+- Set a target weight and date.
+- Receive warnings about targets that may be unrealistic.
+
+Calorie and weight projections are estimates, not medical advice.
+
+### 🎨 Personalization
+- English, Japanese, Chinese, and Korean interface options.
+- Light, dark, and system appearance modes.
+- Custom display name.
+- A clean interface featuring the 食誌 branding.
+
+### 🔐 Encrypted backups
+- Export your records to an encrypted backup.
+- Restore supported encrypted backups using the generated key.
+- Import supported legacy JSON backups.
+- Preserve available diary, profile, preference, weight-history, and meal-photo data in supported exports.
+
+**Important:** Keep your backup key safe. Importing a backup replaces existing records, so export your current data first.
+
+---
+
+## 📱 Screenshots
+
+Take a look inside ShyokuShi.
+
+<p align="center">
+  <img src="assets/screenshots/home.png" width="240" alt="ShyokuShi daily dashboard">
+  &nbsp;&nbsp;
+  <img src="assets/screenshots/diary.png" width="240" alt="ShyokuShi food diary">
+  &nbsp;&nbsp;
+  <img src="assets/screenshots/planner.png" width="240" alt="ShyokuShi meal planner">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/progress.png" width="240" alt="ShyokuShi weight progress">
+  &nbsp;&nbsp;
+  <img src="assets/screenshots/food-search.png" width="240" alt="ShyokuShi food search">
+  &nbsp;&nbsp;
+  <img src="assets/screenshots/settings.png" width="240" alt="ShyokuShi settings">
+</p>
+
+<sub>📸 Screenshots should be saved in <code>assets/screenshots/</code> using the filenames shown above. Remove any image references for screenshots you have not added yet.</sub>
+
+---
+
+## 🔒 Privacy first
+
+ShyokuShi follows a **local-first approach** to personal food journaling.
 
 | Privacy feature | Current behavior |
 |---|---|
-| Account | No account required |
-| Diary storage | Stored in app storage on the device |
-| Profile and goals | Stored locally |
-| Food photos | Stored locally with their entries |
-| Cloud synchronization | Not implemented |
-| Advertising and analytics | No advertising or analytics system in this version |
-| Online food search | Search queries are sent to the selected external food-data providers |
-| Photo recognition | No AI-based food recognition or automatic portion estimation |
-| Live database encryption | The app-managed database is not separately encrypted |
-| Backup protection | Exported backups are encrypted and require their generated key to restore |
+| Account required | No |
+| Diary and profile storage | Local on your device |
+| Food photos | Stored locally |
+| Cloud diary synchronization | Not implemented |
+| Advertising and analytics | None in this version |
+| Online food search | Queries are sent to the selected food-data provider |
+| AI food-photo recognition | Not implemented |
+| Live database encryption | Not separately encrypted |
+| Exported backups | Encrypted; require the generated key to restore |
 
-**An important distinction:** local storage does not mean every file on the device is independently encrypted. The app-managed database is not separately encrypted, so protect your device and use encrypted backups when exporting personal records.
+### 🛡️ What this means
 
-Food search is an online operation. Search terms may be transmitted to Open Food Facts or USDA FoodData Central. Your diary, profile, and photos are not sent as part of the food-search request.
+- Your diary, profile, and photos are not sent as part of food-search requests.
+- Food searches require an internet connection and transmit search terms to the relevant external provider.
+- The live application database is **not separately encrypted**. Protect your device and keep exported backups secure.
+- Backup encryption protects the exported copy; it does not encrypt the live database.
 
-For details, see the privacy notice and terms available in the application.
+For more details, consult the privacy notice and terms available in the application.
 
-## Features
+---
 
-### 1. Daily dashboard
+## 🛠️ Built with
 
-Get an overview of your recorded intake without navigating through every meal.
+- **[Flutter](https://flutter.dev/)** — cross-platform application framework.
+- **[Dart](https://dart.dev/)** — application programming language.
+- **[Open Food Facts](https://world.openfoodfacts.org/)** — packaged-food information.
+- **[USDA FoodData Central](https://fdc.nal.usda.gov/)** — food composition data.
 
-- Calories logged versus your estimated daily target.
-- Protein, carbohydrate, and fat totals.
-- Calorie history over a week, month, quarter, or year.
-- Period totals and daily averages.
-- Visual summaries based on your recorded entries.
+Food-data providers are independent services and do not endorse ShyokuShi. Their data may vary in coverage, completeness, and accuracy. Review their applicable terms and attribution requirements when distributing the application.
 
-The dashboard reflects the data you enter. Missing or incomplete food information can affect the totals.
+---
 
-### 2. Food diary
+## 🚀 Getting started
 
-Maintain a date-based record of what you eat.
+### Prerequisites
 
-- Group foods into meals.
-- Add several ingredients to one meal.
-- Record quantities in grams.
-- Attach an optional meal photo.
-- Add notes about ingredients or preparation.
-- Edit and delete recorded entries.
-- Navigate between dates and revisit earlier meals.
-- Review daily calories and available nutrients.
+Make sure you have installed:
 
-### 3. Food search and nutrition data
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- Dart SDK compatible with your Flutter version
+- Android SDK and build tools
+- Android device or emulator
+- Git
 
-Find food information through supported online sources or enter it manually.
+Internet access is needed for online food searches.
 
-**Supported data providers:**
+### 1. Clone the repository
 
-- [Open Food Facts](https://world.openfoodfacts.org/) — packaged foods and product information.
-- [USDA FoodData Central](https://fdc.nal.usda.gov/) — food composition and supported branded-food records.
-
-Features include:
-
-- Search across supported food databases.
-- Review matching results.
-- Select a food record to populate available nutrient values.
-- Enter custom nutrition values when a suitable record is unavailable.
-- Record nutrition values per 100 g and apply them to the quantity eaten.
-- Select a country or regional food-reference preference.
-
-Available country settings include Japan, the United States, Canada, the United Kingdom, South Korea, China, and Other.
-
-Regional preferences help guide catalogue searches; they do not guarantee that a result is approved by a national health authority or represents an official regional recommendation.
-
-Food records can be incomplete, outdated, or inaccurate. Check product labels and preparation details where possible.
-
-### 4. Meal planning
-
-Plan what you intend to eat before adding it to your actual diary.
-
-- Add foods as planned entries.
-- Calculate projected daily intake from logged and planned food.
-- Compare projected calories with your estimated daily target.
-- Review the effect of a proposed meal on your daily total.
-- Mark planned food as eaten when appropriate.
-- Edit or remove planned entries.
-
-Planned food and consumed food have different meanings. Review the projected total before converting a planned entry into a diary record.
-
-### 5. Weight and progress tracking
-
-Keep a personal record of body-weight changes.
-
-- Record weight measurements.
-- Review the latest recorded weight.
-- View weight history.
-- See the change across your recorded range.
-- Calculate an estimated BMI when sufficient profile information is available.
-
-Adult BMI categories are not displayed for users under 18. BMI is a screening measure, not a direct measurement of body fat or muscle mass.
-
-Progress charts reflect the measurements you record and should not be interpreted as medical assessments.
-
-### 6. Personal profile and goals
-
-Configure the profile information used for goal estimates.
-
-- Record age, height, weight, sex-related inputs, and activity level where applicable.
-- Choose weight loss, weight gain, or maintenance.
-- Set a target weight and target date.
-- Review estimated calorie requirements.
-- Receive warnings for targets that appear unrealistic under the app's estimation rules.
-
-These values are estimates based on general formulas and simplified assumptions. Actual energy needs and weight changes vary between individuals.
-
-食誌 is a personal tracking tool, not a medical service or a substitute for individualized nutrition advice.
-
-### 7. Personalization
-
-Make the interface fit your preferences.
-
-- Set a display name.
-- Choose English, Japanese, Chinese, or Korean.
-- Select System, Light, or Dark appearance.
-- Follow the device appearance setting when System mode is selected.
-- Use the 食誌 leaf branding throughout the application.
-
-### 8. Encrypted backups and restore
-
-Keep a portable copy of your personal records.
-
-- Export an encrypted backup.
-- Include diary entries, planned entries, profile and preference data, weight history, and available meal photos.
-- Save Android backups in `Downloads/ShyokuShi`.
-- Receive a generated 10-character backup key after export.
-- Restore supported encrypted backups using the corresponding key.
-- Import supported legacy JSON backups.
-
-**Backups are important, but restoration replaces existing data.** Export your current diary before importing a backup you are unsure about.
-
-Keep the backup key separately from the backup file. The application cannot recover a lost key.
-
-Backup encryption protects the exported copy; it does not mean the live database is separately encrypted.
-
-## Screenshots
-
-The screenshots below are intended to show the real application interface. Add your own screenshots to `assets/screenshots/` before enabling this section.
-
-<!--
-Uncomment the images after adding the corresponding files.
-
-<p align="center">
-  <img src="assets/screenshots/home.png" width="230" alt="Daily dashboard">
-  <img src="assets/screenshots/diary.png" width="230" alt="Food diary">
-  <img src="assets/screenshots/planner.png" width="230" alt="Meal planner">
-</p>
-
-<p align="center">
-  <img src="assets/screenshots/progress.png" width="230" alt="Weight progress">
-  <img src="assets/screenshots/food-search.png" width="230" alt="Food search">
-  <img src="assets/screenshots/settings.png" width="230" alt="Application settings">
-</p>
--->
-
-Suggested screenshots:
-
-| File | Screen |
-|---|---|
-| `home.png` | Daily calories and macronutrients |
-| `diary.png` | Food entries grouped by meal |
-| `planner.png` | Planned meals and projected calories |
-| `progress.png` | Weight history and progress |
-| `food-search.png` | Food search and nutrient details |
-| `settings.png` | Language, appearance, and preferences |
-
-Screenshots should use sample data rather than personal health records.
-
-## Technology
-
-食誌 is built with Flutter and Dart.
-
-The project uses local application storage for diary records and supports external food-data providers for online search.
-
-The exact dependency versions, Android requirements, and platform compatibility are defined by the project's Flutter configuration. Consult `pubspec.yaml` and the Android project files for implementation details.
-
-## Getting started
-
-### Requirements
-
-- Flutter SDK compatible with the project.
-- Dart SDK version required by the Flutter project.
-- Android SDK and Android build tools.
-- A compatible Android device or emulator.
-- Internet access for online food searches.
-
-### Run from source
-
-Clone the repository:
+Replace `YOUR_USERNAME` with your GitHub username.
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/shiyokushi.git
 cd shiyokushi
 ```
 
-Install dependencies:
+### 2. Install dependencies
 
 ```bash
 flutter pub get
 ```
 
-Check the development environment:
+### 3. Check your development environment
 
 ```bash
 flutter doctor
 ```
 
-Run the application on a connected Android device:
+### 4. Run the application
+
+Connect an Android device or start an emulator.
 
 ```bash
 flutter devices
 flutter run
 ```
 
-### Build a release APK
+### 📦 Build a release APK
 
 ```bash
 flutter build apk --release
 ```
 
-The APK is normally generated at:
+The generated APK is normally located at:
 
 ```text
 build/app/outputs/flutter-apk/app-release.apk
 ```
 
-Install it on a connected Android device using:
+To install the release build on a connected device, use:
 
 ```bash
 flutter install
 ```
 
-For direct distribution, share the generated APK through a trusted channel. Android may require permission to install apps from that source.
+Android may require permission to install APKs from your chosen source.
 
-### iOS status
+### 🍎 iOS status
 
-The application is developed with Flutter, but an iOS build must be compiled and tested using the Apple development toolchain on macOS.
+The project uses Flutter, but building and validating an iOS release requires macOS and Apple's development toolchain. iOS compatibility should not be assumed until the application and its plugins have been tested on that platform.
 
-Do not assume iOS compatibility merely because the project uses Flutter. Verify all required plugins, native permissions, storage behavior, backup restoration, and signing before distributing an iOS build.
+---
 
-## Data sources and attribution
-
-Food information may come from third-party databases. Their records can differ in coverage, completeness, and accuracy.
-
-- [Open Food Facts](https://world.openfoodfacts.org/) — packaged-food database.
-- [USDA FoodData Central](https://fdc.nal.usda.gov/) — food composition database.
-
-These are independent services, not endorsements of 食誌.
-
-Review the applicable provider terms, licenses, attribution requirements, and data-retention restrictions when distributing the application or modifying its data integrations.
-
-## Known limitations
-
-The current version has several deliberate limitations:
+## ⚠️ Current limitations
 
 - Food searches require internet access.
-- A search result may not exactly match the food, brand, recipe, or preparation method consumed.
-- Nutrient values may be incomplete or inaccurate.
-- Country selection does not guarantee official national nutrition data.
-- Food photos are stored with entries but are not analyzed by an AI model.
-- Portion weights must be supplied or otherwise determined by the user; the app does not automatically measure them from photographs.
+- Food database results may not exactly match the food or preparation method consumed.
+- Nutrition values depend on the information available or entered.
+- Country preferences do not guarantee official national nutrition data.
+- Food photos are not analyzed by an AI model.
+- The application does not automatically estimate food portions from photographs.
 - The live local database is not separately encrypted.
-- Exported backups require their generated key for restoration.
-- Importing a backup replaces existing diary records and should be preceded by a separate export.
-- Calorie requirements, BMI, and goal projections are estimates and are not medical advice.
-- iOS availability requires a separate platform build and validation process.
+- Lost backup keys cannot be recovered by the application.
+- Importing a backup replaces existing records.
+- Calorie needs, BMI, and weight projections are estimates, not medical assessments.
+- iOS requires a separate build and validation process.
 
-## Privacy and responsible use
+---
 
-食誌 is intended for personal food journaling and wellness tracking.
+## 🩺 Responsible use
 
-It does not diagnose, prevent, or treat disease. Calorie estimates, nutrition values, BMI, and weight projections should not be treated as precise measurements or medical recommendations.
+ShyokuShi is a personal tracking and wellness tool. It does not diagnose, prevent, or treat medical conditions and is not a substitute for professional healthcare or individualized nutrition advice.
 
-Consult a qualified healthcare professional for medical concerns or individualized dietary guidance.
+Nutrition estimates and progress charts should be interpreted with care. Consult a qualified healthcare professional for medical concerns or personalized dietary guidance.
 
-## Contributing
+---
 
-食誌 is currently developed as a personal project.
+## 🤝 Contributing
 
-If the repository is made public and contributions are welcome, please open an issue to discuss substantial changes before submitting a pull request.
+ShyokuShi is currently a personal project. Contributions and constructive feedback are welcome if the repository is open to community participation.
 
-When contributing:
+Before submitting a substantial change, consider opening an issue to discuss the proposed improvement.
 
-- Keep personal data out of test fixtures and commits.
-- Never commit API secrets or signing credentials.
-- Preserve the local-first privacy model unless a change is explicitly documented.
-- Include tests for changes to nutrition calculations and backup behavior.
-- Document any new external data transmission.
-- Respect the terms and licenses of external data sources.
+Please help maintain the project's quality and privacy principles:
 
-## License
+- 🧪 Add tests for nutrition calculations and backup behavior.
+- 🔐 Never commit passwords, API secrets, signing keys, or personal backups.
+- 🧹 Keep personal health records out of screenshots, test fixtures, and commits.
+- 📝 Document new external data transmissions.
+- 🌱 Preserve the local-first approach unless a change is explicitly documented.
+- 📚 Respect third-party data terms and licenses.
 
-No license has been specified yet.
+---
 
-If this project is published publicly, add a `LICENSE` file stating how others may use, modify, and distribute the code. Until a license is selected, do not assume that public visibility grants permission to reuse the project.
+## 📄 License
 
-## A note from the developer
+ShyokuShi is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for the complete license text.
 
-食誌 is a personal project built around a simple idea: tracking what you eat should be useful, understandable, and under your control.
+The MIT License permits use, copying, modification, merging, publishing, distribution, sublicensing, and sale of copies of the software, subject to its conditions, including preservation of the copyright and permission notice.
 
-The goal is not to make nutrition feel like a competition or to pretend that every calorie can be measured perfectly. It is to provide a practical journal for learning from your own habits over time.
+The software is provided **"as is"**, without warranty, as described in the license.
 
-**食誌 — your food, your record, your pace.**
+The MIT license for this repository does not automatically grant rights to third-party trademarks, data, or assets that may have separate license terms.
 
+---
+
+## 🍃 A note from the developer
+
+ShyokuShi was built around a simple belief: tracking what you eat should help you understand your habits, not make food feel like a competition.
+
+It is a personal journal for noticing patterns, learning over time, and making informed choices at your own pace.
+
+**食誌 — your food, your record, your pace.** 🌿
