@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Leaf logo</title>
+  <desc id="desc">A simple sprouting leaf mark.</desc>
+  <g fill="none" stroke="#35A853" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2">
+    <path d="M32 53.8c0-14.1 0-30.7 3.84-41.12"/>
+    <path d="M31.36 39.68c-19.84 0-21.12-16.64-17.92-19.2 10.88-.64 17.28 6.4 17.92 19.2Z"/>
+    <path d="M33.28 28.16c1.92-16.64 18.56-20.48 20.48-17.92 1.28 12.8-7.68 18.56-20.48 17.92Z"/>
+  </g>
+</svg>
